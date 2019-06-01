@@ -20,6 +20,7 @@ public class CarService {
 
     public Car addCar(Car car) {
         //adding logic
+        carRepository.save(car);
         return carRepository.save(car);
     }
 
